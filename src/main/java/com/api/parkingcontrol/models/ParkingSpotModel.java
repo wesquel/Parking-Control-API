@@ -13,6 +13,7 @@ public class ParkingSpotModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(length = 32)
     private UUID id;
 
     @Column(nullable = false, unique = true, length = 10)
